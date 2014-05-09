@@ -1,0 +1,21 @@
+{
+	"type": "Collection",
+	"properties": {
+		"name": {
+			"name": "name",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "name",
+			"order": 0
+		},
+		"flagCode": {
+			"name": "flagCode",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "flagCode",
+			"order": 1
+		}
+	}
+}

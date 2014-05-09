@@ -1,0 +1,45 @@
+{
+	"type": "Collection",
+	"properties": {
+		"homeTeamId": {
+			"name": "homeTeamId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "homeTeamId",
+			"order": 0
+		},
+		"awayTeamId": {
+			"name": "awayTeamId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "awayTeamId",
+			"order": 1
+		},
+		"homeGoals": {
+			"name": "homeGoals",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "homeGoals",
+			"order": 2
+		},
+		"awayGoals": {
+			"name": "awayGoals",
+			"type": "number",
+			"typeLabel": "number",
+			"required": false,
+			"id": "awayGoals",
+			"order": 3
+		},
+		"startTime": {
+			"name": "startTime",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "startTime",
+			"order": 4
+		}
+	}
+}
