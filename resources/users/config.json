@@ -16,6 +16,14 @@
 			"required": false,
 			"id": "createdOn",
 			"order": 1
+		},
+		"role": {
+			"name": "role",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "role",
+			"order": 2
 		}
 	}
 }

@@ -1,0 +1,18 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.logged-in {
+  color: white;
+  display: inline-block;
+}
+
+.logged-in * {
+  display: inline-block;
+}
+
+.logged-in img {
+  height: 50px;
+}

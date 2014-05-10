@@ -16,6 +16,14 @@
 			"required": false,
 			"id": "flagCode",
 			"order": 1
+		},
+		"group": {
+			"name": "group",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "group",
+			"order": 2
 		}
 	}
 }
