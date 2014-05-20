@@ -9,12 +9,12 @@
 			"id": "name",
 			"order": 0
 		},
-		"teams": {
-			"name": "teams",
+		"teamIds": {
+			"name": "teamIds",
 			"type": "array",
 			"typeLabel": "array",
 			"required": false,
-			"id": "teams",
+			"id": "teamIds",
 			"order": 1
 		}
 	}
