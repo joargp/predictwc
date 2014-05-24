@@ -7,6 +7,11 @@ function($routeProvider, $locationProvider) {
     controller: 'FlagListCtrl',
     controllerAs: 'FlagList'
   })
+  .when('/groups', {
+    templateUrl: 'views/groups.html',
+    controller: 'GroupsCtrl',
+    controllerAs: 'Groups'
+  })
   .when('/User/', {
     templateUrl: 'views/user.html',
     controller: 'UserCtrl',
@@ -16,10 +21,20 @@ function($routeProvider, $locationProvider) {
   // configure html5 to get links working on jsfiddle
   //$locationProvider.html5Mode(true);
 }]);
+
 myApp.controller('UserCtrl', ['$scope', '$http', function ($scope, $http) {
 
   $scope.loggedInUser = undefined;
   // TODO : check if user is logged in
+
+}]);
+myApp.controller('GroupsCtrl', ['$scope', '$http', function ($scope, $http) {
+
+  dpd.groups.get(function (groups, err) {
+    if(err) return console.log(err);
+    $scope.groups = groups;
+    console.log(groups);
+  });
 
 }]);
 myApp.controller('LoginCtrl', ['$scope', '$http', function ($scope, $firebase) {

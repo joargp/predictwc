@@ -1,0 +1,10 @@
+<div class="container">
+  YO!
+  <div ng-repeat="group in groups">
+    <ul> Group {{group.name}}
+      <li ng-repeat="id in group.teamIds">
+        {{id}}
+      </li>
+    </ul>
+  </div>
+</div>
