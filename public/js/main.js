@@ -1,34 +1,31 @@
+
 var myApp = angular.module("tippeKonk", ["ngRoute"]);
-myApp.config(['$routeProvider', '$locationProvider',
-function($routeProvider, $locationProvider) {
+myApp.config(['$routeProvider',
+function($routeProvider) {
   $routeProvider
-  .when('/', {
-    templateUrl: 'views/home.html',
-    controller: 'FlagListCtrl',
-    controllerAs: 'FlagList'
-  })
   .when('/groups', {
     templateUrl: 'views/groups.html',
-    controller: 'GroupsCtrl',
-    controllerAs: 'Groups'
+    controller: 'GroupsCtrl'
   })
-  .when('/User/', {
+  .when('/user', {
     templateUrl: 'views/user.html',
-    controller: 'UserCtrl',
-    controllerAs: 'user'
+    controller: 'UserCtrl'
+  })
+  .when('/', {
+    templateUrl: 'views/home.html',
+    controller: 'FlagListCtrl'
+  });
+}]);
+
+myApp.controller('UserCtrl', ['$scope', function ($scope) {
+
+  dpd.users.me(function(me) {
+    $scope.myuser = me;
+    console.log(me);
   });
 
-  // configure html5 to get links working on jsfiddle
-  //$locationProvider.html5Mode(true);
 }]);
-
-myApp.controller('UserCtrl', ['$scope', '$http', function ($scope, $http) {
-
-  $scope.loggedInUser = undefined;
-  // TODO : check if user is logged in
-
-}]);
-myApp.controller('GroupsCtrl', ['$scope', '$http', function ($scope, $http) {
+myApp.controller('GroupsCtrl', ['$scope', function ($scope) {
 
   dpd.groups.get(function (groups, err) {
     if(err) return console.log(err);
@@ -37,7 +34,7 @@ myApp.controller('GroupsCtrl', ['$scope', '$http', function ($scope, $http) {
   });
 
 }]);
-myApp.controller('LoginCtrl', ['$scope', '$http', function ($scope, $firebase) {
+myApp.controller('LoginCtrl', ['$scope', function ($scope) {
 
 
   dpd.users.me(function(me) {

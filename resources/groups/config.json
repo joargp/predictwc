@@ -8,14 +8,6 @@
 			"required": false,
 			"id": "name",
 			"order": 0
-		},
-		"teamIds": {
-			"name": "teamIds",
-			"type": "array",
-			"typeLabel": "array",
-			"required": false,
-			"id": "teamIds",
-			"order": 1
 		}
 	}
 }
