@@ -1,6 +1,6 @@
 {
   "name": "predictwc",
-  "version": "0.0.2",
+  "version": "0.0.2-1",
   "description": "Predict the results of the World Cup",
   "keywords": [],
   "homepage": "",
@@ -9,12 +9,13 @@
   "dependencies": {
     "deployd": ">= 0"
   },
-    "scripts": {
+  "scripts": {
     "start": "node server"
   },
   "engines": {
     "node": "0.10.x",
     "npm": "1.2.x"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "subdomain": "predictwc"
 }
