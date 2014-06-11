@@ -1,6 +1,6 @@
 {
   "name": "predictwc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Predict the results of the World Cup",
   "keywords": [],
   "homepage": "",
@@ -13,7 +13,7 @@
     "start": "node server"
   },
   "engines": {
-    "node": "0.8.x",
+    "node": "0.10.x",
     "npm": "1.2.x"
   },
   "license": "MIT"
