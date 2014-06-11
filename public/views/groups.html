@@ -1,10 +1,1 @@
-<div class="container">
-  YO!
-  <div ng-repeat="group in groups">
-    <ul> Group {{group.name}}
-      <li ng-repeat="id in group.teamIds">
-        {{id}}
-      </li>
-    </ul>
-  </div>
-</div>
+<div class="container"><div class="col-md-3" ng-repeat="group in groups"><div class="panel panel-primary"><div class="panel-heading">Group {{group.name}}</div><div class="panel-body"><div ng-repeat="country in group.teams"><flag-icon class="col-md-6"><div class="col-md-6">{{country.name}}</div></div></div></div></div></div>
