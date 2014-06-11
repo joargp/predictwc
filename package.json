@@ -1,0 +1,20 @@
+{
+  "name": "predictwc",
+  "version": "0.0.1",
+  "description": "Predict the results of the World Cup",
+  "keywords": [],
+  "homepage": "",
+  "author": "Joar Gullestad Pettersen",
+  "contributors": [],
+  "dependencies": {
+    "deployd": ">= 0"
+  },
+    "scripts": {
+    "start": "node server"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.2.x"
+  },
+  "license": "MIT"
+}
