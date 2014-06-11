@@ -1,1 +1,7 @@
-<p>This is the matches view.</p>
+<div class="panel panel-default"><div class="panel-heading">Add new country</div><div class="panel-body">Home team<select ng-model="match.homeTeamId" ng-options="country.id as country.name for country in countries"></select>Away team<select ng-model="match.homeTeamId" ng-options="country.id as country.name for country in countries"></select>Start date:<input type="date" class="input-medium" name="date" value="" ng-model="match.date">Start time<input type="button" name="sumbit" value="Add" ng-click="addMatch(match)" class="btn btn-primary"></div></div><style media="screen">.img-thumbnail.flag-icon-background {
+    width: 27px;
+    height: 21px;
+  }
+  .flag-wrapper {
+    height: 21px;
+  }</style><div class="table-responsive table-striped"><table class="table table-striped"><tr><th><th>Name<th>Flag Code<td>Group<td>Actions<td><tr ng-repeat="match in matches"><td><flag-icon country="country"><td>{{match.homeTeam}}<td>{{match.awayTeam}}<td>{{match.startTime}}<td></table></div>
