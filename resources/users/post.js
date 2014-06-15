@@ -1,2 +1,2 @@
-this.createdOn = new Date().toISOString();
+this.createdOn = new Date().getTime();
 this.role = 'user';

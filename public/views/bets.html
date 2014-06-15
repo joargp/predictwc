@@ -1,0 +1,19 @@
+<!-- <div class="panel panel-default">
+  <div class="panel-heading">Add new match</div>
+  <div class="panel-body">
+    Home team
+    <select ng-model="match.homeTeamId" ng-options="country.id as country.name for country in countries">
+    </select>
+    Away team
+    <select ng-model="match.awayTeamId" ng-options="country.id as country.name for country in countries">
+    </select>
+    Start date:
+    <input type="date" class="input-medium" name="date" value="" ng-model="match.date">
+    Start time
+    <input type="time" class="input-medium" name="date" value="" ng-model="match.time">
+
+    <input type="button" name="sumbit" value="Add" ng-click="addMatch(match)" class="btn btn-primary">
+  </div>
+</div> --><div class="table-responsive table-striped"><table class="table table-striped"><tr><th>Home Team<th><th><td>Start Time<td>Away Team<td><td><td><tr ng-repeat="match in matches"><!-- <td>
+        <flag-icon country="match.homeTeam"/>
+      </td> --><td><div class="flag-wrapper animated bounceIn"><div title="{{match.homeTeam.name}}" class="img-thumbnail flag flag-icon-background flag-icon-{{match.homeTeam.flagCode}}"></div></div><td>{{match.homeTeam.name}}<td><input type="number" name="homeScore" ng-model="match.chosenHomeScore" ng-hide="match.locked"><span ng-show="match.locked">{{match.chosenHomeScore}}</span><td>{{match.startTime}}<td><input type="number" name="awayScore" ng-model="match.chosenAwayScore" ng-hide="match.locked"><span ng-show="match.locked">{{match.chosenAwayScore}}</span><td>{{match.awayTeam.name}}<td><div class="flag-wrapper animated bounceIn"><div title="{{match.awayTeam.name}}" class="img-thumbnail flag flag-icon-background flag-icon-{{match.awayTeam.flagCode}}"></div></div><td><input ng-hide="match.locked" type="button" name="bet" value="bet" ng-click="addBet(match)"></table></div>

@@ -1,1 +1,2 @@
-protect('createdDate');
+protect('createdOn');
+protect('role');

@@ -1,0 +1,45 @@
+{
+	"type": "Collection",
+	"properties": {
+		"matchId": {
+			"name": "matchId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "matchId",
+			"order": 0
+		},
+		"homeScore": {
+			"name": "homeScore",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "homeScore",
+			"order": 1
+		},
+		"awayScore": {
+			"name": "awayScore",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "awayScore",
+			"order": 2
+		},
+		"betTime": {
+			"name": "betTime",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "betTime",
+			"order": 3
+		},
+		"userId": {
+			"name": "userId",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "userId",
+			"order": 4
+		}
+	}
+}
